@@ -1,0 +1,89 @@
+.team{  
+  padding: 0 15px 150px 15px;
+  position: relative;
+  background: $grey2;
+  &:before{
+    content: "03";
+    position: absolute;
+    font-size: 270px;
+    z-index: 0;
+    font-family: 'Poppins-Bold';
+    color: $grey3;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  .wrapper{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title{
+    padding-top: 150px;
+    font-size: 50px;    
+    color: $grey5;
+    font-family: 'LibreBaskerville-Regular';
+    margin-bottom: 40px;
+  }
+  &__subtext{
+    color: $grey4;
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+  .boxes{
+    display: flex;
+    justify-content: space-between;
+    .box{
+      width: calc(25% - 20px);
+      text-align: center;      
+      background: $white;
+      &__image{
+        display: block;
+        max-width: 263px;
+        max-height: 270px;        
+        img{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;          
+        }
+      }      
+      &__name{
+        margin-top: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        &.red{
+          color:$red;
+        }
+        &.green{       
+          color: $green;
+        }
+        &.purpure{
+          color: $purpure;
+        }
+        &.yellow{
+          color: $yellow;
+        }
+      }
+      &__post{
+        font-size: 10px;
+        margin-bottom: 20px;        
+        color: $grey6;
+      }
+
+      &.red{       
+        border-bottom: 4px solid $red;
+      }
+      &.green{       
+        border-bottom: 4px solid $green;
+      }
+      &.purpure{
+        border-bottom: 4px solid $purpure;
+      }
+      &.yellow{
+        border-bottom: 4px solid $yellow;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.team{
+  padding: 150px 15px 0 15px;
+  background: $grayBg;
+  position: relative;
+  &:before{
+    content: '04';
+    font-size: 275px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    z-index: 0;
+    color: $graySectionNum;
+  }
+  &__title{
+    color: $colorTitle;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 40px;
+    text-align: center;
+
+  }
+  &__subtext{
+    font-size: 18px;
+    color: $grayFont;
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+
+  }
+  &__boxes{
+    margin: 0 15px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .box{    
+    text-align: center;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 10px);
+    max-width: 263px;
+    &.red{
+      border-bottom: 3px solid $red;
+      .box__name{        
+        color: $red;
+      }
+    }
+    &.green{
+      border-bottom: 3px solid $green;
+      .box__name{        
+        color: $green;
+      }
+    }    
+    &.purpure{
+      border-bottom: 3px solid $purpure;
+      .box__name{        
+        color: $purpure;
+      }
+    }
+    &.yellow{
+      border-bottom: 3px solid $yellow;
+      .box__name{        
+        color: $yellow;
+      }
+    }    
+    &__img{
+      height:  270px;
+      overflow: hidden;
+
+      img{       
+        display: block;
+      }      
+    }
+    &__footer{
+      padding: 10px 0;
+      min-height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__name{
+      font-size: 18;
+    }
+    &__post{
+      font-size: 16px;
+    }
+  }
+  &__tabs{
+
+    .tab{
+      display: none;
+      background: $white;
+      padding: 70px 100px;
+      &.show{
+        display: block;      
+      }
+      &__title{
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      }
+    }
+  }
+}

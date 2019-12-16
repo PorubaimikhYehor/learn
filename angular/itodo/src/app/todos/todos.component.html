@@ -1,0 +1,22 @@
+<div class="title">
+  <h2 *ngIf='!selectedList'>Please, select a list</h2>
+  <input *ngIf='selectedList' class="title__input" [value]='title()'>
+  <button mat-icon-button *ngIf='selectedList' (click)='deleteList()'>
+    <mat-icon>delete_forever</mat-icon>
+  </button>
+</div>
+
+<div *ngIf='selectedList'>
+  <div *ngFor="let todo of todos">
+    <app-item-todo *ngIf="!todo.isChecked" [todo]="todo"></app-item-todo>
+  </div>
+  <input placeholder="Next todo..." [(ngModel)]='nextTodo.discription' (keydown.enter)='addTodo()' (focusout)='addTodo()'>
+  <mat-divider></mat-divider>
+  <div *ngFor="let todo of todos">
+    <app-item-todo class="isChecked" *ngIf="todo.isChecked" [todo]="todo"></app-item-todo>
+  </div>
+</div>
+
+<!-- <pre>
+  {{nextTodo | json}}
+</pre> -->

@@ -1,0 +1,19 @@
+
+// //==========BASE=================
+@import './reset.scss';
+@import './base.scss';
+
+// //===========containers===================
+@import '../../components/Header/_style.scss';
+@import '../../containers/Home/_style.scss';
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+};

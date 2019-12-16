@@ -1,0 +1,7 @@
+<div [class.isChecked]="todo.isChecked">
+  <mat-checkbox [checked]="todo.isChecked" (click)="changeCheck()"></mat-checkbox>
+  <input  type="text" [(ngModel)]="todo.discription">
+  <button mat-icon-button>
+    <mat-icon (click)="deleteTodo()">clear</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,108 @@
+.team{
+  padding: 150px 15px 0 15px;
+  background: #f7f7f7;
+  position: relative;
+  &:before{
+    content: '04';
+    font-size: 275px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins-SemiBold';
+    z-index: 0;
+    color: #e0e0e0;
+  }
+  .wrapper{
+    max-width: 1140px;
+    margin: auto;
+  }
+  &__title{
+    color: #313131;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 40px;
+    text-align: center;
+
+  }
+  &__subtext{
+    font-size: 18px;
+    color: #616161;
+    position: relative;
+    margin-bottom: 80px;
+    text-align: center;
+
+  }
+  &__boxes{
+    margin: 0 15px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .box{    
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 10px);
+    max-width: 263px;
+    &.red{
+      border-bottom: 3px solid #fc5f45;
+      .box__name{        
+        color: #fc5f45;
+      }
+    }
+    &.green{
+      border-bottom: 3px solid #38c695;
+      .box__name{        
+        color: #38c695;
+      }
+    }    
+    &.purpure{
+      border-bottom: 3px solid #b27cf5;
+      .box__name{        
+        color: #b27cf5;
+      }
+    }
+    &.yellow{
+      border-bottom: 3px solid #feb960;
+      .box__name{        
+        color: #feb960;
+      }
+    }    
+    &__img{
+      height:  270px;
+      overflow: hidden;
+
+      img{       
+        display: block;
+      }      
+    }
+    &__footer{
+      padding: 10px 0;
+      min-height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__name{
+      font-size: 18;
+    }
+    &__post{
+      font-size: 16px;
+    }
+  }
+  &__tabs{
+
+    .tab{
+      background: #fff;
+      padding: 70px 100px;
+      &__title{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

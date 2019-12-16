@@ -1,0 +1,107 @@
+.workSteps{
+  padding: 0 15px 150px 15px;
+  position: relative;
+  &:before{
+    content:'05';
+    position: absolute;
+    font-size: 270;
+    font-family: 'Poppins-bold';
+    top:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    color: $grey3;
+  }
+  .wrapper{
+    position: relative;
+  }
+  &__title{
+    padding-top: 150px;
+    color: $grey5;
+    font-size:50px;
+    font-family: 'LibreBaskerville-Regular', serif;
+    text-align: center;
+
+  }
+  &__subtext{
+    margin-top:30px;
+    font-size: 18px;
+    color:$grey4;
+    margin-bottom: 130px;
+    text-align: center;
+
+  }
+  &__container{
+    position: relative;
+    max-width: 566px;
+    max-height: 300px;    
+    margin:0 auto;
+
+
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__box{
+    position: absolute;
+    background: $white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    padding: 40px 30px;
+    max-width: 400px;
+    min-height: 217px;
+    &.left{
+      top:-50px;
+      left:-280px;
+    }
+    &.right{
+      top:-50px;
+      right:-280px;
+    }    
+    &.red{
+      border-bottom:3px solid $red;
+    }
+    &.green{
+      border-bottom:3px solid $green;
+    }
+    &.purpure{
+      border-bottom:3px solid $purpure;
+    }
+    &.yellow{
+      border-bottom:3px solid $yellow;
+    }
+  }
+  &__boxnumber{
+    position:relative;
+    font-size:50px;
+    font-family: 'LibreBaskerville-Regular', serif;
+    color: $grey3;
+    width: 84px;
+    height: 84px;
+    &:after{
+      content:'';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left:-20%;
+      bottom: 42px;
+      width: 140%;
+      border-bottom:1px solid $grey3;
+      transform: rotate(-45deg);
+    }
+  }  
+  &__info{
+    flex:1;
+  }
+  &__boxtitle{
+    font-size: 25px;
+    margin-bottom: 25px;
+
+  }
+  &__boxtext{
+    font-size: 15px;
+    line-height: 27px;
+  }
+}

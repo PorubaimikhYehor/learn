@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="header">
+    <h2>Todo list <span *ngIf="!todos">is clear</span></h2>
+    <div *ngIf="todos">
+      <mat-chip-list>
+        <mat-chip>Displaying {{filterMessage}}</mat-chip>
+        <button mat-raised-button [matMenuTriggerFor]="menu" class="filterBtn">
+          <mat-icon>filter</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="changeFilter('all')">
+            <mat-icon>format_list_bulleted</mat-icon>
+            <span>All</span>
+          </button>
+          <button mat-menu-item (click)="changeFilter('done')">
+            <mat-icon>check</mat-icon>
+            <span>Done</span>
+          </button>
+          <button mat-menu-item (click)="changeFilter('active')">
+            <mat-icon>stop</mat-icon>
+            <span>Active</span>
+          </button>
+        </mat-menu>
+      </mat-chip-list>
+    </div>
+  </div>
+  <div *ngIf="visibleTodos">
+    <div *ngFor="let todo of visibleTodos.reverse()">
+      <app-item-todo [todo]="todo" (changeCheckTodo)="changeCheckTODO($event)"></app-item-todo>
+    </div>
+  </div>
+</div>

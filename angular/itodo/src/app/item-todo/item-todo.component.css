@@ -1,0 +1,21 @@
+div {
+  /* background: green; */
+  display: flex;
+  align-items: center;
+
+}
+
+input {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  flex:1;
+  /* width: 80%; */
+  
+}
+
+.isChecked input{
+  color: grey;
+  text-decoration: line-through;
+}
+

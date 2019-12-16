@@ -1,0 +1,30 @@
+@import './_variables.scss';
+
+
+@import './_reset.scss';
+@import './_base.scss';
+
+
+
+@import '../../containers/Header/_style.scss';
+@import '../../containers/Focus/_style.scss';
+@import '../../containers/Portfolio/_style.scss';
+
+
+@import '../../components/Home/_style.scss';
+@import '../../components/AboutComp/_style.scss';
+// @import '../../components/Focus/style.scss';
+@import '../../components/Video/_style.scss';
+// @import '../../components/Portfolio/style.scss';
+@import '../../components/ItemTeam/_style.scss';
+@import '../../components/TeamTabInfo/_style.scss';
+@import '../../components/Stats/_style.scss';
+@import '../../components/WorkStep/_style';
+@import '../../components/SelectSlider/_style';
+@import '../../components/PricingBox/_style';
+@import '../../components/ItemWhySelectUs/_style';
+@import '../../components/ActiveArticle/_style';
+@import '../../components/ItemArticle/_style';
+@import '../../components/Subscribe/_style';
+@import '../../components/ContactForm/style';
+

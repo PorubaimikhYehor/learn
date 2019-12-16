@@ -1,0 +1,13 @@
+.btn{
+  height: 50px;
+  color: $white;
+  border-radius: 25px;
+  padding: 0 40px;
+  font-family: 'Poppins-SemiBold';
+  font-size: 16px;
+  text-transform: uppercase;
+  border:none;
+  &.orange{
+    background: $orange;
+  }
+}

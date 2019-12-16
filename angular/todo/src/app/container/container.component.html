@@ -1,0 +1,7 @@
+<mat-card>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-edit-todo [todos]="todos" (addTodo)="postTODO($event)" (deleteTodos)="delTodos()"></app-edit-todo>
+  <app-list-todos [todos]="todos" (changeCheckTodo)="changeCheckTODO($event)"></app-list-todos>
+</mat-card>

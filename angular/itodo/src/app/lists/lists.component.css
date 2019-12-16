@@ -1,0 +1,28 @@
+.lists {
+  padding-bottom: 40px;
+
+}
+.list {
+  width: 100%;
+  text-align: start;
+}
+.addList{
+  margin-right: 15px;
+  position: absolute;
+  bottom: 0px;
+
+}
+.addList input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 65%;
+
+}
+h2 {
+  text-align: center;
+}
+.isActive {
+  background: rgb(168, 168, 168);
+  font-weight: 700;
+}

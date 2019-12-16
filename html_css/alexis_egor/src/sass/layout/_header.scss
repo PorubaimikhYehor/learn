@@ -1,0 +1,42 @@
+.header{  
+  padding:25px 15px;
+  .wrapper{
+    margin: auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    .logo{
+      width: 97px;
+      height: 27px;
+    }
+    .headerNav{
+      font-size: 14px;
+      display: flex;      
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      a{
+        color:#272727;
+        margin-right: 22px;
+        padding: 5px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          background: red;
+        }
+      }
+    }
+  }
+  @include media (1000px){
+    .headerNav{
+      flex-direction: column;
+    }
+  }
+  @include media (300px){
+    .wrapper{
+      flex-direction: column;
+    }
+  }
+}

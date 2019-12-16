@@ -1,0 +1,19 @@
+<h2>Lists</h2>
+<input type='text' placeholder="Search" [(ngModel)]="search" (ngModelChange)="getSearchLists()">
+<div class="lists" *ngIf="lists">
+  <div *ngFor="let list of searchLists">
+    <button class="list" [class.isActive]="selectedList === list" mat-button (click)="chooseLIST(list)">{{list.name}}</button>
+  </div>
+
+</div>
+
+<div class="addList">
+  <button mat-icon-button (click)="addList()">
+    <mat-icon>add_circle</mat-icon>
+  </button>
+  <input (keydown.enter)="addList()" [(ngModel)]='newList.name' placeholder="Add list...">
+</div>
+
+<pre>
+    {{search | json}}
+  </pre>

@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1>
+  Welcome to {{ title }}!
+</h1>
+
+
+<div class="container">
+  
+  <app-lists (chooseList)="chooseLIST($event)" [lists]="todoList.lists" [selectedList]="todoList.selectedList"></app-lists>
+  <app-todos [todos]="activeTodos" [selectedList]="todoList.selectedList"></app-todos>
+</div>
+
+<!-- <pre>
+  {{activeTodos | json}}
+</pre> -->
+<!-- 
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <app-lists [lists]="todoList.lists"></app-lists>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-todos [todos]="todoList.todos"></app-todos>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+      <app-lists [lists]="todoList.lists"></app-lists>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-todos [todos]="todoList.todos"></app-todos>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div> -->

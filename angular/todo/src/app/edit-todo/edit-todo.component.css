@@ -1,0 +1,23 @@
+.container{
+  margin: 40px auto;
+}
+button{ 
+  margin-right: 10px;
+  width: 36px;
+  min-width: 32px;
+  padding: 0;
+}
+input {
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+mat-card.mat-card{
+  padding-right: 10px;
+  margin: 0 auto;
+  display: inline ;
+  /* background: red; */
+}
+.isActive{
+  box-shadow: 0 0 20px rgb(2, 96, 247);
+}

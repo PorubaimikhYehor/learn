@@ -1,0 +1,101 @@
+.focus{
+  padding: 0 15px;
+  background: $grey2;
+  &:before{
+    content: "02";
+    font-family: "Poppins-bold";
+    font-size: 270px;
+    position: absolute;      
+    color: $grey3;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    z-index: 0;
+  }
+  .wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title{
+    margin:0 15px 80px 15px;    
+    padding-top: 150px;
+    position: relative;
+    font-family: 'LibreBaskerville-Regular', serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: $grey5;
+  }
+  &__subtext{
+    position: relative;
+    font-size: 18px;
+    color: $grey4;
+    margin:0 15px 80px 15px;    
+  }
+  &__boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .box{
+    margin: 15px 15px 150px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 30px;      
+    max-width: 235px;
+    min-width: 160px;
+    flex:1;
+    min-height: 345px;      
+    background: $white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    &.red{
+      border-bottom: 5px solid $red;
+    }
+    &.green{
+      border-bottom: 5px solid $green;
+    }
+    &.purpure{
+      border-bottom: 5px solid $purpure;
+    }
+    &.yellow{
+      border-bottom: 5px solid $yellow;
+    }      
+    &__icon{
+      margin-bottom: 30px
+    }
+    &__title{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 27px;
+    }    
+  }
+  @include media (1000px) {
+    .wrapper{
+      padding-bottom: 30px;
+    }
+    .box{
+      min-width: 250;
+      flex:auto;
+      margin-bottom: 30px;
+    }    
+  }
+  @include media (768px){
+    &__title{
+      padding-top: 50px; 
+    }
+   .box{
+    padding: 30px;
+    min-height: 0;
+    margin: 15px;
+    }
+  }
+}
+
+
+

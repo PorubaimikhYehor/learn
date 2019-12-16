@@ -1,0 +1,25 @@
+{
+  "name": "Alexis",
+  "description": "This is my project",
+  "main": "index.js",
+  "authors": [
+    "Sergey Koval"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/seregakovalweb/SecondGroup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "wow": "wowjs#^1.1.2",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "wow": "wowjs#^1.1.2"
+  }
+}

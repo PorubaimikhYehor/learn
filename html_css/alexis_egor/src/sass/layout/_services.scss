@@ -1,0 +1,29 @@
+.services{
+  padding:25px 15px;
+  .wrapper{
+    position: relative;
+    margin: auto;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .back02{
+        position:absolute;
+        top: 0;        
+        p{          
+          color:#f6f6f6;
+          font-size: 274px;
+          font-weight: 700;
+        }
+    } 
+    .title{
+      background: red;
+    } 
+    .text{
+      background: yellow;
+    }
+    .boxses{
+      background: blue;
+    }
+  }
+}

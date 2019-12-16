@@ -1,0 +1,96 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: $defaultTextColor;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  // background: grey;
+  padding: 0 15px;
+}
+.sectionTitle{
+  padding: 1px;
+  position: relative;
+}
+
+.sectionNumber{  
+  position: absolute;
+  top:-20px;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 274px;
+  color: $backgroundText;
+  font-weight: 700;
+  z-index: 0;
+  &.dark{
+    color:  $darkSectionNum;
+  }
+}
+
+.title {
+  padding-top: 130px;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: "Libre Baskerville";
+  font-size: 60px;
+  color: $h1Text;
+  text-align: center;
+  &.dark{
+    color: $white;
+  }
+}
+.subtitle{
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  &.dark{
+    color: $white;
+  }
+}
+
+.button {
+  height: 50px;
+  padding: 0 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $white;
+  border:3px solid transparent;
+  outline: none;
+  &.red{
+    background-color: $orange;
+  }
+  &.green{
+    background-color: $green;
+  }
+  &.purpure{
+    background-color: $purpure;
+  }
+
+}
+
+.colorLine {
+  display: block;
+  height: 3px;
+  background: linear-gradient(
+        to right, 
+        $red 25%, 
+        $green 25%,
+        $green 50%,
+        $purpure 50%, 
+        $purpure 75%, 
+        $yellow 75%);
+}
+.background1{
+  background: $background1;
+}
+.background2{
+  background: $background2;
+}

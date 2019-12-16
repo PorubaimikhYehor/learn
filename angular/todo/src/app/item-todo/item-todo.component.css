@@ -1,0 +1,7 @@
+mat-card{
+  margin-bottom: 20px;
+}
+.isChecked {
+  text-decoration: line-through;
+  color: grey;
+}

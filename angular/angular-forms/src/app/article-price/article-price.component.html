@@ -1,0 +1,32 @@
+<div class="container">
+  <form [formGroup]='priceForm'>
+    <div class="form-group">
+      <label for='level'>Level
+        <select class="form-control" id='level' formControlName='level'>
+          <option *ngFor="let level of levels" [value]="level.level">{{level.level}}</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-group">
+      <label for='paperType'>Paper Types
+        <select class="form-control" id='paperType' formControlName='paperType'>
+          <option *ngFor="let paperType of paperTypes" [value]="paperType.type">{{paperType.type}}</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-group">
+      <label for='numberOfPages'>Paper Types
+        <input class="form-control" type='number' id='numberOfPages' formControlName='numberOfPages'>
+      </label>
+    </div>
+  </form>
+  <hr>
+  <h2>Total price: $ {{totalPrice}}</h2>
+</div>
+
+
+
+<pre>
+  {{priceForm.value | json}}
+  {{valueForm | json}}
+</pre>

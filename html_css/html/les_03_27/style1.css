@@ -1,0 +1,7 @@
+
+.divRed .secondH .spanRED{
+     color: red;
+ }
+.divRed .secondH.active .spanRED{
+    color: red;
+}

@@ -1,0 +1,39 @@
+.videoBG{
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: rgba(#000000, 0.8)
+  }
+  &__video{
+    width: 100%;
+    object-fit: fill;    
+  }
+  &__container{
+    z-index: 2;
+    color:$white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    font-size: 30px;
+    margin-bottom: 40px
+  }
+  &__subtext{
+    font-size: 15px;
+    margin-top: 40px;
+  }
+}

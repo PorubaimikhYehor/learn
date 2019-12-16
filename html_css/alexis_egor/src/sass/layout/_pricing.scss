@@ -1,0 +1,71 @@
+.pricing{
+  padding: 0 15px;
+  background: $grey2;
+  position: relative;
+  &:before{
+    content:'06';
+    font-size: 270px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    color: $grey3;
+    font-family: 'Poppins-Bold';
+  }
+  
+  .wrapper{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+
+  }
+  &__title{
+    font-family: "Libre Baskerville";
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+  }
+  &__subtext{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color:$grey4;
+  }
+  &__boxes{
+    display: flex;
+    .box{
+      width: calc(100%/3 - 15px);
+      text-align: center;
+      color:$grey5;
+
+      &__title{
+        font-size: 20px;
+      }
+      &__price{
+        margin: 30px 0;
+        height: 97px;
+        width: 97px;
+        border: 3px solid;
+        border-radius:50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color:$white;
+        &.green{
+          background: $green;
+          border-color: $green;
+        }
+        &:first-child{
+          font-size: 18px;
+        }
+      }
+      &__prcetext{
+
+      }
+      &__info{
+    
+      }
+    }  
+  }
+}

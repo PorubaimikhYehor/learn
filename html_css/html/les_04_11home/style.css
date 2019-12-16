@@ -1,0 +1,231 @@
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Gothic A1', sans-serif;*/
+* {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #1519d2;
+}
+
+
+.header_top{
+    background: #bababa;
+    text-align: center;
+    padding: 10px 70px;
+}
+
+.header .header_title{
+
+    font-size: -webkit-xxx-large;
+    font-family: 'Gothic A1', sans-serif;
+    float:left;
+    /*background: green;*/
+    width: 50%;
+    /*position: relative;
+    left: 25%;*/
+    margin-left: 25%;
+}
+
+.header .header_phone{
+    float: right;
+    margin-top: 10px;
+    /*position: relative;
+    right: 70px;
+    top: 7px;*/
+}
+
+.header .header_bottom{
+    background: #fe9c9d /*#F07E72*/;
+}
+
+.header .header_logo{
+    float:left;
+    margin:10px 0px 10px 75px;
+    min-height: 50px;
+    /* background: blue;*/
+}
+.header .header_logo .header_stl{
+    font-size: x-small ;
+}
+
+.header .header_bottom .header_nav ul{
+    height: auto;
+/*    background: green; */
+    float:right;
+    margin: 30px 30px 30px 0;
+  /*  position: relative;
+    top:30px;*/
+
+}
+
+.header .header_bottom .header_nav li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.section_top{
+    margin-left: 10%;
+    width: 80%;
+    background: #d4d2d3;
+    border-bottom: #d4d2d3 20px solid;
+}
+.section_top .main{
+    float: left;
+    width: calc(70% - 20px);
+    background: #c1bfc0;
+    margin: 10px;
+}
+
+.section_top .main .article .article_title{
+    background: #a2a0a1;
+    padding: 10px;
+    margin: 10px;
+
+}
+.section_top .main .article .article_title h4{
+    float:left;
+   /* background: blue*/
+}
+
+.section_top .main .article .article_title .date_post{
+    float:right;
+    /*background: blue*/
+}
+.section_top .main .article .article_img{
+    float:left;
+   /* background: blue;*/
+    text-align: center;
+    width: calc(50% - 90px);
+    min-height: 200px;
+    margin: 20px 30px 30px 60px;
+}
+
+.section_top .main .article .text_sec_top{
+    float: right;
+    /*background: green;*/
+    width: calc(50% - 90px);
+    margin: 20px 60px 30px 30px;
+}
+
+.section_top .navigation{
+    float: right;
+    width: 30%;
+    background:#9198f3;
+
+}
+
+.section_top .navigation h4 {
+    /*background: gray;*/
+    margin: 15px;
+    text-align: center;
+}
+.section_top .navigation ul {
+    /*background: gray;*/
+    padding: 10px 20px;
+}
+
+.section_top .navigation p{
+    padding: 20px;
+}
+.section_top .navigation li{
+    padding: 5px 0;
+}
+
+.section_b {
+    margin-left: 10%;
+    width: 80%;
+    background: #b3b3b5;
+    text-align: center;
+    border-bottom: 10px solid #d4d2d7;
+}
+
+.section_b .block{
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.section_b .block div {
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    background: #f6a2c3;
+    text-align: center;
+}
+
+.section_b .block div h4{
+    /*background: green;*/
+    margin: 30px;
+}
+.section_b .block_b {
+    margin: 0 5%;
+}
+.footer {
+    margin-left: 10%;
+    width: 80%;
+    background: #d2f388;
+    padding:30px 0;
+}
+.footer .footer_logo{
+    float: left;
+    /*margin-top: 10px;*/
+    width: 30%;
+    /*background: #1519d2 ;*/
+    text-align: center;
+}
+.footer h2{
+    float:left;
+    /*background: green;*/
+    width: 30%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 5px;
+}
+#form_search{
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+.subfooter {
+    width: 100%;
+    background: #5c67f5;
+    padding: 10px 0;
+}
+.subfooter .subfoter_text {
+    float: left;
+    /*background: green;*/
+    width: 20%;
+    margin-left: 10%;
+    text-align: center;
+}
+.subfooter .copyright {
+    float: left;
+   /* background: green;*/
+    width: 30%;
+    margin-left: 5%;
+    text-align: center;
+}
+.subfooter .footer_phone {
+    float: right;
+   /* background: green;*/
+    width: 20%;
+    margin-right: 5%;
+    text-align: right;
+
+}
+.clearfix:after{
+    display: block;
+    clear:both;
+    content: '';
+}

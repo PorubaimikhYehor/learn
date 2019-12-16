@@ -1,0 +1,173 @@
+/* test comments  */
+
+html, body, h1, h2, h3{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.header{
+    padding: 15px;
+    background: gray;
+    text-align: center;
+    position: relative;
+}
+.phone{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.subheader{
+     background: goldenrod;
+     padding:0 15px;
+ }
+
+.subheader .nav ul li:last-child a{
+    padding-right: 0;
+}
+.coileft {
+    float: left
+}
+.nav{
+    float: right;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    font-size: 16px;
+    transition: all 0.5s;
+    display: block;
+    padding: 10px;
+}
+.nav li a:hover{
+    background: red;
+}
+.container{
+    padding:0 15px;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 700px;
+
+}
+
+.wrapper .main{
+    float: left;
+    width: 70%;
+    background: #e1e1e7;
+}
+
+
+
+.post{
+
+}
+.post .post_body{
+    padding: 15px;
+
+}
+.post .post_header{
+    padding: 15px;
+    background: #e1e1e1;
+}
+.post .post_title{
+    float: left;
+    background: #e1e1e2;
+}
+
+.post .post_data{
+    float: right;
+    background: #e1e1e3;
+}
+.post_wipeavatar{
+    float: left;
+
+}
+
+.post_avatar{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.post_right{
+    float: right;
+}
+
+.sidebar{
+    float: right;
+    width: 30%;
+    background: #e1e1e5;
+}
+.sidebar .sidebar_header{
+    padding: 15px;
+}
+
+.sidebar_body{
+    padding:0 15px;
+}
+
+.sidebar_body a{
+    padding: 10px;
+    display: block;
+    background: red;
+    border-radius: 10px;
+}
+.sidebar_body a:hover{
+
+    background: lightseagreen;
+}
+
+.boxes{
+margin: 0 -15px;
+}
+.boxes .box{
+    float: left;
+    width: calc(33.3% - 30px);
+    background: rebeccapurple;
+    margin:0 15px;
+}
+
+.row{
+    margin-bottom: 15px;
+}
+
+
+.
+/*.table{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.table .table_row{
+    display: table-row;
+}
+.table_row > div{
+    display:table-cell;
+    height: 200px;
+    background:gray;
+    vertical-align: middle;
+
+}*/

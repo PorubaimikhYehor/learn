@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card [class.isActive]=isFocus>
+    <input placeholder="I am going to..." 
+      type="text"
+      minlength="4"
+      required 
+      [(ngModel)]="model.description" 
+      name="description"
+      (focus)="changeFocus(true)" 
+      (focusout)="changeFocus(false)" 
+      (keydown.enter)="postTodo()">
+    <button mat-raised-button [disabled]=addButtonDisabled() (click)="postTodo()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-raised-button [disabled]=deleteButtonDisabled() (click)="delTodos()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card>
+</div>
